@@ -1,13 +1,17 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: #020D09;
     color: #00FF95;
     font-family: 'Inconsolata', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    /* line-height: 150%; */
+    line-height: 150%;
 }
 
 .mainDiv {
-    margin: 8% 12%;
     box-shadow: 1px 0px 0px 0px rgba(0, 255, 149, 0.75);
 }

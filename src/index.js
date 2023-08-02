@@ -8,7 +8,11 @@ require("./Styles/DefaultPageStyles.css")
 const App = () =>
     <>
         <Bar />
-        <div className="mainDiv">
+        <div className="mainDiv"
+            style={{
+                width: '1000px',
+                marginTop: '8%'
+            }}>
             <SAP />
         </div>
     </>

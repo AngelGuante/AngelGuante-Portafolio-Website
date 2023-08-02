@@ -3,7 +3,16 @@ require('../../Styles/ComponentsStyles/Bar.css')
 
 const Bar = () =>
     <div className='bar'
-        style={{ display: 'flex', justifyContent: 'space-between' }}>
+        style={{
+            width: '400px',
+            position: 'fixed',
+            top: '4%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            zIndex: '100',
+            display: 'flex',
+            justifyContent: 'space-between'
+        }}>
         <ButtonBar props={{
             label: 'Home',
             icon: 'solar:home-broken',
