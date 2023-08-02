@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "http://AngelGuante.github.io/AngelGuante-Portafolio-Website",
+  "homepage": "http://AngelGuante.github.io/AngelGuante-Portfolio-Website",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

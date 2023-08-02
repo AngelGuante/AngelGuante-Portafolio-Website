@@ -11,7 +11,7 @@ const App = () =>
         <div className="mainDiv"
             style={{
                 width: '1000px',
-                marginTop: '8%'
+                marginTop: '10%'
             }}>
             <SAP />
         </div>
