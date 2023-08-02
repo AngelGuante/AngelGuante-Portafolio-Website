@@ -95,6 +95,61 @@ const SAP = () =>
             </Container>
         </div>
 
+        {/* ******** */}
+        {/* Projects */}
+        {/* ******** */}
+        <div style={{
+            marginTop: '100px',
+            borderLeft: '1px solid rgba(0, 255, 149, 0.75)'
+        }}>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: '16px',
+            }}>
+                <Icon style={{
+                    fontSize: '30px',
+                    marginRight: '16px',
+                    marginLeft: '12px'
+                }}
+                    icon="octicon:project-roadmap-24">
+                </Icon>
+                <h1>Projects</h1>
+            </div>
+            <Container>
+                <Row>
+                    <Container style={{ textAlign: 'justify' }}>
+                        <SpanOpen />
+                        <Container style={{
+                            borderLeft: '1px solid rgba(0, 255, 149, 0.75)'
+                        }}>
+                            <span className='text' >
+                                💡 I've worked on a variety of projects over the time and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.
+                            </span>
+                        </Container>
+                        <SpanClose />
+                    </Container>
+
+                    <Container>
+                        <Row>
+                            <Col>
+
+                                <div style={{
+                                    height: '100px',
+                                    width: '100px',
+                                    backgroundColor: '#111d18',
+                                    borderRadius: '30px 30px 0px 30px',
+                                    border: '3px 2px 16px 1px rgba(0,0,0,0.75)'
+                                }}>
+
+                                </div>
+
+                            </Col>
+                        </Row>
+                    </Container>
+                </Row>
+            </Container>
+        </div>
 
         {/* ***** */}
         {/* CONTACT */}
@@ -115,7 +170,7 @@ const SAP = () =>
                 }}
                     icon="mdi:contact-mail-outline">
                 </Icon>
-                <h1>Contact</h1>
+                <h1 id="Contact">Contact</h1>
             </div>
             <Container>
                 <Row>

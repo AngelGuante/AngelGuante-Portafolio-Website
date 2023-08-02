@@ -16,23 +16,27 @@ const Bar = () =>
         <ButtonBar props={{
             label: 'Home',
             icon: 'solar:home-broken',
-            ml: true
+            ml: true,
+            href: '#Home'
         }} />
         <ButtonBar props={{
             label: 'About',
             icon: 'cib:about-me',
-            ml: false
+            ml: false,
+            href: '#About'
         }} />
         <ButtonBar props={{
             label: 'Projects',
             icon: 'octicon:project-roadmap-24',
-            ml: false
+            ml: false,
+            href: '#Projects'
         }} />
         <ButtonBar props={{
             label: 'Contact',
             icon: 'mdi:contact-mail-outline',
-            mr: true
-        }} />
+            mr: true,
+            href: '#Contact'
+        }}/>
     </div>
 
 export default Bar
