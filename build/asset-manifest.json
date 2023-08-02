@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AngelGuante-Portafolio-Website/static/css/main.cff9540a.css",
-    "main.js": "/AngelGuante-Portafolio-Website/static/js/main.a9457c1e.js",
+    "main.css": "/AngelGuante-Portafolio-Website/static/css/main.96284d2e.css",
+    "main.js": "/AngelGuante-Portafolio-Website/static/js/main.76878089.js",
     "index.html": "/AngelGuante-Portafolio-Website/index.html",
-    "main.cff9540a.css.map": "/AngelGuante-Portafolio-Website/static/css/main.cff9540a.css.map",
-    "main.a9457c1e.js.map": "/AngelGuante-Portafolio-Website/static/js/main.a9457c1e.js.map"
+    "main.96284d2e.css.map": "/AngelGuante-Portafolio-Website/static/css/main.96284d2e.css.map",
+    "main.76878089.js.map": "/AngelGuante-Portafolio-Website/static/js/main.76878089.js.map"
   },
   "entrypoints": [
-    "static/css/main.cff9540a.css",
-    "static/js/main.a9457c1e.js"
+    "static/css/main.96284d2e.css",
+    "static/js/main.76878089.js"
   ]
 }
