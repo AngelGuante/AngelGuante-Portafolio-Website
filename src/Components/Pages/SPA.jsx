@@ -4,7 +4,7 @@ import ButtonAction from '../Buttons/ButtonAction'
 import SpanOpen from '../Elements/Tags/Span/SpanOpen'
 import SpanClose from '../Elements/Tags/Span/SpanClose'
 import Foorter from '../Containers/Footer'
-require('../../Styles/ComponentsStyles/Pages/SPA.css')
+import ProjectDiv from '../Containers/ProjectDiv'
 
 const SPA = () =>
     <>
@@ -134,60 +134,30 @@ const SPA = () =>
                     <Container>
                         <Row>
                             <Col>
-                                <div className='projectsDiv'
-                                    style={{
-                                        height: '280px',
-                                        width: '200px',
-                                        backgroundColor: '#414044',
-                                        borderRadius: '14px 14px 0px 14px'
-                                    }}>
-                                    <Container>
-                                        <Row>
-                                            <div style={{
-                                                display: 'flex',
-                                                justifyContent: 'space-between',
-                                                alignItems: 'center',
-                                                width: '100%',
-                                                margin: '8px 10px'
-                                            }}>
-                                                <span>API</span>
-                                                <div>
-                                                    <Icon style={{
-                                                        fontSize: '40px'
-                                                    }}
-                                                        icon="akar-icons:node-fill">
-                                                    </Icon>
-                                                </div>
-                                            </div>
-                                        </Row>
-                                        <Row>
-                                            <span style={{
-                                                fontSize: '16px',
-                                                lineHeight: '16px',
-                                                textAlign: 'justify',
-                                                margin: '8px 8px'
-                                            }}>
-                                                <SpanOpen />
-                                                API created with Node and Express. It makes scraping of a web page using the <a href='https://pptr.dev/'>Puppeter</a> Node.js library to Google Finance currency and gets a currency conversion of selected currencies.
-                                                <SpanClose />
-                                            </span>
-                                        </Row>
-                                        <Row>
-                                            <div style={{
-                                                width: '100%',
-                                                display: 'flex',
-                                                alignItems: 'center'
-                                            }}>
-                                                <Icon style={{
-                                                    fontSize: '20px'
-                                                }}
-                                                    icon="carbon:executable-program">
-                                                </Icon>
-                                            </div>
-                                        </Row>
-                                    </Container>
-                                </div>
+                                <div style={{
+                                    display: 'flex'
+                                }}>
+                                    <ProjectDiv props={{
+                                        nameProject: 'Google Finance Scrapping',
+                                        type: 'API',
+                                        icon: 'akar-icons:node-fill',
+                                        text: "API created with Node and Express. It makes scraping of a web page using the Puppeter Node.js library to Google Finance currency and gets a currency conversion of selected currencies."
+                                    }} />
 
+                                    <ProjectDiv props={{
+                                        nameProject: 'TO DO',
+                                        type: 'WEB',
+                                        icon: 'mdi:react',
+                                        text: "TO DO"
+                                    }} />
+
+                                    <ProjectDiv props={{
+                                        nameProject: 'TO DO',
+                                        type: 'API',
+                                        icon: 'simple-icons:dotnet',
+                                        text: "TO DO"
+                                    }} />
+                                </div>
                             </Col>
                         </Row>
                     </Container>
