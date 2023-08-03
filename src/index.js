@@ -1,7 +1,7 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
 import Bar from './Components/Containers/Bar'
-import SAP from './Components/Pages/SAP'
+import SPA from './Components/Pages/SPA'
 require("./Styles/Reset.css")
 require("./Styles/DefaultPageStyles.css")
 
@@ -11,9 +11,9 @@ const App = () =>
         <div className="mainDiv"
             style={{
                 width: '1000px',
-                marginTop: '10%'
+                marginTop: '10rem'
             }}>
-            <SAP />
+            <SPA />
         </div>
     </>
 

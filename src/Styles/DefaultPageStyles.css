@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #020D09;
     color: #00FF95;

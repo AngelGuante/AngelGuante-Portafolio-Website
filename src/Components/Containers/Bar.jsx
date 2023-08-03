@@ -6,7 +6,7 @@ const Bar = () =>
         style={{
             width: '400px',
             position: 'fixed',
-            top: '4%',
+            top: '3rem',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             zIndex: '100',
