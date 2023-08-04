@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react'
 import { Container, Row } from 'react-grid-system'
 import SpanOpen from '../Elements/Tags/Span/SpanOpen'
 import SpanClose from '../Elements/Tags/Span/SpanClose'
+import { Tooltip } from 'react-tooltip'
 require('../../Styles/ComponentsStyles/Pages/SPA.css')
 
 const ProjectDiv = (props) => {
@@ -76,18 +77,29 @@ const ProjectDiv = (props) => {
                     display: 'flex',
                     justifyContent: 'center'
                 }}>
-                    <Icon style={{
-                        fontSize: '26px',
-                        marginRight: '3px'
-                    }}
+                    <Icon id={props['id']}
+                        style={{
+                            fontSize: '26px',
+                            marginRight: '3px',
+                            cursor: props['cursor'] ? 'pointer' : 'not-allowed'
+                        }}
                         icon="carbon:executable-program">
                     </Icon>
-                    <Icon style={{
-                        fontSize: '26px',
-                        marginLeft: '3px'
-                    }}
+                    <Tooltip anchorSelect={'#' + props['id']} place="top">
+                        {props['tooltip']}
+                    </Tooltip>
+
+                    <Icon id={'_' + props['id']}
+                        style={{
+                            fontSize: '26px',
+                            marginLeft: '3px',
+                            cursor: 'pointer'
+                        }}
                         icon="raphael:githubalt">
                     </Icon>
+                    <Tooltip anchorSelect={'#_' + props['id']} place="top">
+                        <span>Go to GitHub Project</span>
+                    </Tooltip>
                 </div>
             </div>
         </div>

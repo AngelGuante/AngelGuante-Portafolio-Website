@@ -5,6 +5,7 @@ import SpanOpen from '../Elements/Tags/Span/SpanOpen'
 import SpanClose from '../Elements/Tags/Span/SpanClose'
 import Foorter from '../Containers/Footer'
 import ProjectDiv from '../Containers/ProjectDiv'
+import SkillIcon from '../SkillIcon'
 
 const SPA = () =>
     <>
@@ -20,7 +21,7 @@ const SPA = () =>
                         letterSpacing: '-1px'
                     }}>
                         <div>
-                            <h1 id='Home'>Miguel Ángel</h1>
+                            <h1 id='Home'>Miguel Angel</h1>
                         </div>
                         <div style={{
                             display: 'flex',
@@ -125,7 +126,7 @@ const SPA = () =>
                             borderLeft: '1px solid rgba(0, 255, 149, 0.75)'
                         }}>
                             <span className='text' >
-                            I have worked on several technologies, with some on personal projects others on professional projects, these are some of theses technologies:
+                                I have worked on several technologies, with some on personal projects others on professional projects, these are some of theses technologies:
                             </span>
                         </Container>
                         <SpanClose />
@@ -136,63 +137,53 @@ const SPA = () =>
                             <div style={{
                                 display: 'flex'
                             }}>
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="devicon:csharp">
-                                </Icon>
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="skill-icons:javascript">
-                                </Icon>
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="logos:nodejs">
-                                </Icon>
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="logos:vue">
-                                </Icon>
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="skill-icons:react-dark">
-                                </Icon>
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="logos:mysql">
-                                </Icon>
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="logos:postgresql">
-                                </Icon>
-                                
-                                <Icon style={{
-                                    fontSize: '60px',
-                                    marginRight: '16px',
-                                    marginLeft: '12px'
-                                }}
-                                    icon="devicon:webpack">
-                                </Icon>
+                                <SkillIcon props={{
+                                    id: 'csharpIcon',
+                                    icon: 'devicon:csharp',
+                                    tooltip: 'C#'
+                                }} />
+
+                                <SkillIcon props={{
+                                    id: 'javascriptIcon',
+                                    icon: 'skill-icons:javascript',
+                                    tooltip: 'JavaScript'
+                                }} />
+
+                                <SkillIcon props={{
+                                    id: 'nodeIcon',
+                                    icon: 'logos:nodejs',
+                                    tooltip: 'NodeJs'
+                                }} />
+
+                                <SkillIcon props={{
+                                    id: 'vueIcon',
+                                    icon: 'logos:vue',
+                                    tooltip: 'VueJs'
+                                }} />
+
+                                <SkillIcon props={{
+                                    id: 'reactIcon',
+                                    icon: 'skill-icons:react-dark',
+                                    tooltip: 'ReactJs'
+                                }} />
+
+                                <SkillIcon props={{
+                                    id: 'mysqlIcon',
+                                    icon: 'logos:mysql',
+                                    tooltip: 'MySQL'
+                                }} />
+
+                                <SkillIcon props={{
+                                    id: 'postgressIcon',
+                                    icon: 'logos:postgresql',
+                                    tooltip: 'PostgreSQL'
+                                }} />
+
+                                <SkillIcon props={{
+                                    id: 'webpackIcon',
+                                    icon: 'devicon:webpack',
+                                    tooltip: 'Webpack'
+                                }} />
                             </div>
                         </Container>
                     </Container>
@@ -248,7 +239,10 @@ const SPA = () =>
                                                     nameProject: 'Google Finance Scrapping',
                                                     type: 'NodeJS',
                                                     icon: 'akar-icons:node-fill',
-                                                    text: "API created with Node and Express. It makes scraping of a web page using the Puppeter Node.js library to Google Finance currency and gets a currency conversion of selected currencies."
+                                                    text: "API created with Node and Express. It makes scraping of a web page using the Puppeter Node.js library to Google Finance currency and gets a currency conversion of selected currencies.",
+                                                    id: 'nodeProject',
+                                                    tooltip: 'Live Preview',
+                                                    cursor: true
                                                 }} />
                                             </Col>
                                             <Col md={4}>
@@ -256,16 +250,22 @@ const SPA = () =>
                                                     nameProject: 'Git Console Copy',
                                                     type: 'JavaScript',
                                                     icon: 'fa6-brands:js',
-                                                    text: "Git console copy made with pure Javascript and CSS, it was my portfolio website."
+                                                    text: "Git console copy made with pure Javascript and CSS, it was my portfolio website.",
+                                                    id: 'jsProject',
+                                                    tooltip: 'Live Preview',
+                                                    cursor: true
                                                 }} />
                                             </Col>
                                             <Col md={4}>
-                                                <ProjectDiv props={{
-                                                    nameProject: 'Maria',
-                                                    type: 'Java',
-                                                    icon: 'fa6-brands:java',
-                                                    text: "Store application to make buy, sells, administrate employees, items and inventory."
-                                                }} />
+                                                <ProjectDiv
+                                                    props={{
+                                                        nameProject: 'Maria',
+                                                        type: 'Java',
+                                                        icon: 'fa6-brands:java',
+                                                        text: "Store application to make buy, sells, administrate employees, items and inventory.",
+                                                        id: 'MariaProject',
+                                                        tooltip: 'Not Live Preview Avalible'
+                                                    }} />
                                             </Col>
                                         </Row>
                                     </Container>
