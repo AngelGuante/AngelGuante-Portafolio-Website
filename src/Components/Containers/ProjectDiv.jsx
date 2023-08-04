@@ -11,10 +11,10 @@ const ProjectDiv = (props) => {
         <div className='projectsDiv'
             style={{
                 height: '350px',
-                width: '220px',
+                width: '100%',
                 backgroundColor: '#414044',
                 borderRadius: '14px 14px 0px 14px',
-                margin: '30px'
+                margin: '10px'
             }}>
 
             < Container >
@@ -62,26 +62,34 @@ const ProjectDiv = (props) => {
                     </span>
                 </Row>
                 <Row>
-                    <div style={{
-                        width: '100%',
-                        display: 'flex',
-                        justifyContent: 'center'
-                    }}>
-                        <Icon style={{
-                            fontSize: '26px',
-                            marginRight: '3px'
-                        }}
-                            icon="carbon:executable-program">
-                        </Icon>
-                        <Icon style={{
-                            fontSize: '26px',
-                            marginLeft: '3px'
-                        }}
-                            icon="raphael:githubalt">
-                        </Icon>
-                    </div>
+
                 </Row>
             </Container >
+
+            <div style={{
+                position: 'absolute',
+                width: '100%',
+                bottom: '1rem'
+            }}>
+                <div style={{
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'center'
+                }}>
+                    <Icon style={{
+                        fontSize: '26px',
+                        marginRight: '3px'
+                    }}
+                        icon="carbon:executable-program">
+                    </Icon>
+                    <Icon style={{
+                        fontSize: '26px',
+                        marginLeft: '3px'
+                    }}
+                        icon="raphael:githubalt">
+                    </Icon>
+                </div>
+            </div>
         </div>
     )
 }

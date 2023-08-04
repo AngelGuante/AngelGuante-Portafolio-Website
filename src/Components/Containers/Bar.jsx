@@ -4,7 +4,7 @@ require('../../Styles/ComponentsStyles/Bar.css')
 const Bar = () =>
     <div className='bar'
         style={{
-            width: '400px',
+            width: '480px',
             position: 'fixed',
             top: '3rem',
             left: '50%',
@@ -26,6 +26,12 @@ const Bar = () =>
             href: '#About'
         }} />
         <ButtonBar props={{
+            label: 'Skills',
+            icon: 'gridicons:stats-down',
+            ml: false,
+            href: '#Skills'
+        }} />
+        <ButtonBar props={{
             label: 'Projects',
             icon: 'octicon:project-roadmap-24',
             ml: false,
@@ -36,7 +42,7 @@ const Bar = () =>
             icon: 'mdi:contact-mail-outline',
             mr: true,
             href: '#Contact'
-        }}/>
+        }} />
     </div>
 
 export default Bar

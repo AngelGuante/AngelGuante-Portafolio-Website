@@ -96,6 +96,110 @@ const SPA = () =>
             </Container>
         </div>
 
+        {/* ***** */}
+        {/* ABOUT */}
+        {/* ***** */}
+        <div style={{
+            marginTop: '100px',
+            borderLeft: '1px solid rgba(0, 255, 149, 0.75)'
+        }}>
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: '16px',
+            }}>
+                <Icon style={{
+                    fontSize: '30px',
+                    marginRight: '16px',
+                    marginLeft: '12px'
+                }}
+                    icon="gridicons:stats-down">
+                </Icon>
+                <h1 id='Skills'>Skills</h1>
+            </div>
+            <Container>
+                <Row>
+                    <Container style={{ textAlign: 'justify' }}>
+                        <SpanOpen />
+                        <Container style={{
+                            borderLeft: '1px solid rgba(0, 255, 149, 0.75)'
+                        }}>
+                            <span className='text' >
+                            I have worked on several technologies, with some on personal projects others on professional projects, these are some of theses technologies:
+                            </span>
+                        </Container>
+                        <SpanClose />
+                    </Container>
+
+                    <Container style={{ textAlign: 'justify' }}>
+                        <Container>
+                            <div style={{
+                                display: 'flex'
+                            }}>
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="devicon:csharp">
+                                </Icon>
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="skill-icons:javascript">
+                                </Icon>
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="logos:nodejs">
+                                </Icon>
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="logos:vue">
+                                </Icon>
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="skill-icons:react-dark">
+                                </Icon>
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="logos:mysql">
+                                </Icon>
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="logos:postgresql">
+                                </Icon>
+                                
+                                <Icon style={{
+                                    fontSize: '60px',
+                                    marginRight: '16px',
+                                    marginLeft: '12px'
+                                }}
+                                    icon="devicon:webpack">
+                                </Icon>
+                            </div>
+                        </Container>
+                    </Container>
+                </Row>
+            </Container>
+        </div>
+
         {/* ******** */}
         {/* Projects */}
         {/* ******** */}
@@ -125,7 +229,7 @@ const SPA = () =>
                             borderLeft: '1px solid rgba(0, 255, 149, 0.75)'
                         }}>
                             <span className='text' >
-                                💡 I've worked on a variety of projects over the time and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.
+                                💡 I've worked on a variety of projects over the time and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. More Projects in my GitHub, check it out!
                             </span>
                         </Container>
                         <SpanClose />
@@ -137,26 +241,34 @@ const SPA = () =>
                                 <div style={{
                                     display: 'flex'
                                 }}>
-                                    <ProjectDiv props={{
-                                        nameProject: 'Google Finance Scrapping',
-                                        type: 'API',
-                                        icon: 'akar-icons:node-fill',
-                                        text: "API created with Node and Express. It makes scraping of a web page using the Puppeter Node.js library to Google Finance currency and gets a currency conversion of selected currencies."
-                                    }} />
-
-                                    <ProjectDiv props={{
-                                        nameProject: 'TO DO',
-                                        type: 'WEB',
-                                        icon: 'mdi:react',
-                                        text: "TO DO"
-                                    }} />
-
-                                    <ProjectDiv props={{
-                                        nameProject: 'TO DO',
-                                        type: 'API',
-                                        icon: 'simple-icons:dotnet',
-                                        text: "TO DO"
-                                    }} />
+                                    <Container>
+                                        <Row>
+                                            <Col md={4}>
+                                                <ProjectDiv props={{
+                                                    nameProject: 'Google Finance Scrapping',
+                                                    type: 'NodeJS',
+                                                    icon: 'akar-icons:node-fill',
+                                                    text: "API created with Node and Express. It makes scraping of a web page using the Puppeter Node.js library to Google Finance currency and gets a currency conversion of selected currencies."
+                                                }} />
+                                            </Col>
+                                            <Col md={4}>
+                                                <ProjectDiv props={{
+                                                    nameProject: 'Git Console Copy',
+                                                    type: 'JavaScript',
+                                                    icon: 'fa6-brands:js',
+                                                    text: "Git console copy made with pure Javascript and CSS, it was my portfolio website."
+                                                }} />
+                                            </Col>
+                                            <Col md={4}>
+                                                <ProjectDiv props={{
+                                                    nameProject: 'Maria',
+                                                    type: 'Java',
+                                                    icon: 'fa6-brands:java',
+                                                    text: "Store application to make buy, sells, administrate employees, items and inventory."
+                                                }} />
+                                            </Col>
+                                        </Row>
+                                    </Container>
                                 </div>
                             </Col>
                         </Row>
