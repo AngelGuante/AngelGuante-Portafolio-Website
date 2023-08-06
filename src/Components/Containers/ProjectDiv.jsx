@@ -9,7 +9,8 @@ const ProjectDiv = (props) => {
     props = props['props']
 
     return (
-        <div className='projectsDiv'
+        <div onClick={() => props['page']()} 
+        className='projectsDiv'
             style={{
                 height: '350px',
                 width: '100%',

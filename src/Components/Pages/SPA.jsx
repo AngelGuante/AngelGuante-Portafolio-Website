@@ -10,17 +10,8 @@ import { Tooltip } from 'react-tooltip'
 
 const SPA = () => {
 
-    const OpenPage = (event) => {
-        console.log(event)
-        switch (event) {
-            case 'linkedin':
-                window.open('https://www.linkedin.com/in/miguel-angel-guante-suero/', '_blank')
-                break
-            case 'github':
-                window.open('https://github.com/AngelGuante', '_blank')
-                break
-        }
-    }
+    const OpenPage = (url) =>
+        window.open(url, '_blank')
 
     return (
         <>
@@ -257,7 +248,8 @@ const SPA = () => {
                                                         text: "API created with Node and Express. It makes scraping of a web page using the Puppeter Node.js library to Google Finance currency and gets a currency conversion of selected currencies.",
                                                         id: 'nodeProject',
                                                         tooltip: 'Live Preview',
-                                                        cursor: true
+                                                        cursor: true,
+                                                        page: () => OpenPage('https://github.com/AngelGuante/Google_Finance_Scrapping-API')
                                                     }} />
                                                 </Col>
                                                 <Col md={4}>
@@ -268,7 +260,8 @@ const SPA = () => {
                                                         text: "Git console copy made with pure Javascript and CSS, it was my portfolio website.",
                                                         id: 'jsProject',
                                                         tooltip: 'Live Preview',
-                                                        cursor: true
+                                                        cursor: true,
+                                                        page: () => OpenPage('https://github.com/AngelGuante/AngelGuante-Console-Presentation')
                                                     }} />
                                                 </Col>
                                                 <Col md={4}>
@@ -279,7 +272,8 @@ const SPA = () => {
                                                             icon: 'fa6-brands:java',
                                                             text: "Store application to make buy, sells, administrate employees, items and inventory.",
                                                             id: 'MariaProject',
-                                                            tooltip: 'Live Preview Not Available'
+                                                            tooltip: 'Live Preview Not Available',
+                                                            page: () => OpenPage('https://github.com/AngelGuante/Maria')
                                                         }} />
                                                 </Col>
                                             </Row>
@@ -340,12 +334,12 @@ const SPA = () => {
                                             flexDirection: 'column',
                                             cursor: 'pointer'
                                         }}>
-                                        <Icon id='sendmeEmail'  
-                                        style={{
-                                            fontSize: '70px',
-                                            marginRight: '16px',
-                                            marginLeft: '12px'
-                                        }}
+                                        <Icon id='sendmeEmail'
+                                            style={{
+                                                fontSize: '70px',
+                                                marginRight: '16px',
+                                                marginLeft: '12px'
+                                            }}
                                             icon="mingcute:mail-fill">
                                         </Icon>
                                         <Tooltip anchorSelect='#sendmeEmail' place="top">
@@ -356,7 +350,7 @@ const SPA = () => {
 
                                 <Col>
                                     <div className='buttonActionBG'
-                                        onClick={() => OpenPage('linkedin')}
+                                        onClick={() => OpenPage('https://www.linkedin.com/in/miguel-angel-guante-suero/')}
                                         style={{
                                             width: '100px',
                                             height: '100px',
@@ -366,12 +360,12 @@ const SPA = () => {
                                             flexDirection: 'column',
                                             cursor: 'pointer'
                                         }}>
-                                        <Icon id='gotoLinkedIn' 
-                                        style={{
-                                            fontSize: '54px',
-                                            marginRight: '16px',
-                                            marginLeft: '12px'
-                                        }}
+                                        <Icon id='gotoLinkedIn'
+                                            style={{
+                                                fontSize: '54px',
+                                                marginRight: '16px',
+                                                marginLeft: '12px'
+                                            }}
                                             icon="uiw:linkedin">
                                         </Icon>
                                         <Tooltip anchorSelect='#gotoLinkedIn' place="top">
@@ -382,7 +376,7 @@ const SPA = () => {
 
                                 <Col>
                                     <div className='buttonActionBG'
-                                        onClick={() => OpenPage('github')}
+                                        onClick={() => OpenPage('https://github.com/AngelGuante')}
                                         style={{
                                             width: '100px',
                                             height: '100px',
