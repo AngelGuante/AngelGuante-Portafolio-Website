@@ -13,6 +13,7 @@ const ButtonAction = () =>
             cursor: 'pointer'
         }}>
         <div className="buttonAction"
+        on onClick={() => window.open('https://drive.google.com/uc?export=download&id=18c5hlgw7PBhuwTzZzP0XUbH3uNgVWZB9')}
             style={{
                 width: '150px',
                 height: '150px',

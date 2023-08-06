@@ -325,6 +325,7 @@ const SPA = () => {
                             <Row>
                                 <Col>
                                     <div className='buttonActionBG'
+                                        onClick={() => window.location = 'mailto:miguel_guante@outlook.com'}
                                         style={{
                                             width: '100px',
                                             height: '100px',
@@ -404,7 +405,6 @@ const SPA = () => {
                     </Row>
                 </Container>
             </div>
-
             <Foorter />
         </>
     )
