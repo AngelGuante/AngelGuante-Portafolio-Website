@@ -1,17 +1,20 @@
-import ButtonBar from '../Buttons/ButtonBar'
 require('../../Styles/ComponentsStyles/Bar.css')
+import ButtonBar from '../Buttons/ButtonBar'
+import { Icon } from '@iconify/react'
+import { Tooltip } from 'react-tooltip'
 
 const Bar = () =>
     <div className='bar'
         style={{
-            width: '480px',
+            width: '490px',
             position: 'fixed',
             top: '3rem',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             zIndex: '100',
             display: 'flex',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            alignItems: 'center'
         }}>
         <ButtonBar props={{
             label: 'Home',
@@ -43,6 +46,17 @@ const Bar = () =>
             mr: true,
             href: '#Contact'
         }} />
+        <Icon id='gotoGithubProjecty'
+            style={{
+                fontSize: '20px',
+                marginRight: '10px',
+            }}
+            icon="pajamas:github"
+            onClick={() => window.open('https://github.com/AngelGuante/AngelGuante-Portfolio-Website', '_blank')}>
+        </Icon>
+        <Tooltip anchorSelect='#gotoGithubProjecty' place="top">
+            <span>Go to this website GitHub repository</span>
+        </Tooltip>
     </div>
 
 export default Bar

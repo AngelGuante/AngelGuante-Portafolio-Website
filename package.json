@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-grid-system": "^8.1.9",
     "react-scripts": "^5.0.1",
-    "react-tooltip": "^5.20.0"
+    "react-tooltip": "^5.20.0",
+    "reactjs-popup": "^2.0.5"
   },
   "browserslist": {
     "production": [
