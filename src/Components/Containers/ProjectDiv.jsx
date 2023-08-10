@@ -3,14 +3,46 @@ import { Container, Row } from 'react-grid-system'
 import SpanOpen from '../Elements/Tags/Span/SpanOpen'
 import SpanClose from '../Elements/Tags/Span/SpanClose'
 import { Tooltip } from 'react-tooltip'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 require('../../Styles/ComponentsStyles/Pages/SPA.css')
+
+const PopupRunApplication = (propss) => {
+    propss = propss['propss']
+    console.log(propss)
+    switch (propss['nameProject']) {
+        // case 'Google Finance Scrapping':
+        //     return (
+        //         <Popup trigger={
+        //             propss['cursor'] &&
+        //             <Icon id={propss['id']}
+        //                 style={{
+        //                     fontSize: '26px',
+        //                     marginRight: '3px',
+        //                     cursor: propss['cursor'] ? 'pointer' : 'not-allowed'
+        //                 }}
+        //                 icon="carbon:executable-program">
+        //             </Icon>
+        //         } position="right center">
+
+        //             <div>
+        //                 <input type="text"
+        //                     style={{
+        //                         width: '60px'
+        //                     }} />
+        //             </div>
+        //         </Popup>
+        //     )
+        default:
+            return
+    }
+}
 
 const ProjectDiv = (props) => {
     props = props['props']
 
     return (
-        <div onClick={() => props['page']()} 
-        className='projectsDiv'
+        <div className='projectsDiv'
             style={{
                 height: '350px',
                 width: '100%',
@@ -78,19 +110,14 @@ const ProjectDiv = (props) => {
                     display: 'flex',
                     justifyContent: 'center'
                 }}>
-                    <Icon id={props['id']}
-                        style={{
-                            fontSize: '26px',
-                            marginRight: '3px',
-                            cursor: props['cursor'] ? 'pointer' : 'not-allowed'
-                        }}
-                        icon="carbon:executable-program">
-                    </Icon>
+                    <PopupRunApplication propss={props} />
+
                     <Tooltip anchorSelect={'#' + props['id']} place="top">
                         {props['tooltip']}
                     </Tooltip>
 
-                    <Icon id={'_' + props['id']}
+                    <Icon onClick={() => props['page']()}
+                        id={'_' + props['id']}
                         style={{
                             fontSize: '26px',
                             marginLeft: '3px',
